@@ -1,0 +1,31 @@
+Initial State:
+[1, 2, 3]
+[4, 0, 6]
+[7, 5, 8]
+
+=== Iteration (Depth Limit = 0) ===
+Exploring node at depth 0: [[1, 2, 3], [4, 0, 6], [7, 5, 8]]
+
+=== Iteration (Depth Limit = 1) ===
+Exploring node at depth 0: [[1, 2, 3], [4, 0, 6], [7, 5, 8]]
+Exploring node at depth 1: [[1, 0, 3], [4, 2, 6], [7, 5, 8]]
+Exploring node at depth 1: [[1, 2, 3], [4, 5, 6], [7, 0, 8]]
+Exploring node at depth 1: [[1, 2, 3], [0, 4, 6], [7, 5, 8]]
+Exploring node at depth 1: [[1, 2, 3], [4, 6, 0], [7, 5, 8]]
+
+=== Iteration (Depth Limit = 2) ===
+Exploring node at depth 0: [[1, 2, 3], [4, 0, 6], [7, 5, 8]]
+Exploring node at depth 1: [[1, 0, 3], [4, 2, 6], [7, 5, 8]]
+Exploring node at depth 2: [[0, 1, 3], [4, 2, 6], [7, 5, 8]]
+Exploring node at depth 2: [[1, 3, 0], [4, 2, 6], [7, 5, 8]]
+Exploring node at depth 1: [[1, 2, 3], [4, 5, 6], [7, 0, 8]]
+Exploring node at depth 2: [[1, 2, 3], [4, 5, 6], [0, 7, 8]]
+Exploring node at depth 2: [[1, 2, 3], [4, 5, 6], [7, 8, 0]]
+🎯 Goal reached!
+
+✅ Goal found at depth 2
+
+Final Goal State:
+[1, 2, 3]
+[4, 5, 6]
+[7, 8, 0]
