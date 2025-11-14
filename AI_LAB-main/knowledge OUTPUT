@@ -1,0 +1,2 @@
+KB: {'A and B'}, alpha: A → KB entails alpha? True
+KB: {'A or B'}, alpha: A and B → KB entails alpha? False
