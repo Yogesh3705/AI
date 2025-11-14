@@ -1,0 +1,36 @@
+=== Resolution Proof ===
+Premises:
+   P v Q
+   ~P v R
+   ~Q
+   ~R
+Conclusion to prove: R
+
+Initial Clauses (including negated conclusion):
+   P v Q
+   R v ~P
+   ~Q
+   ~R
+   ~R
+
+--- Iteration 1 ---
+Resolved (P v Q) and (R v ~P) → Q v R
+Resolved (P v Q) and (~Q) → P
+Resolved (R v ~P) and (~R) → ~P
+Resolved (R v ~P) and (~R) → ~P
+Added 3 new clauses.
+
+--- Iteration 2 ---
+Resolved (P v Q) and (R v ~P) → Q v R
+Resolved (P v Q) and (~Q) → P
+Resolved (P v Q) and (~P) → Q
+Resolved (R v ~P) and (~R) → ~P
+Resolved (R v ~P) and (~R) → ~P
+Resolved (R v ~P) and (P) → R
+Resolved (~Q) and (Q v R) → R
+Resolved (~R) and (Q v R) → Q
+Resolved (~R) and (Q v R) → Q
+Resolved (P) and (~P) → EMPTY
+
+✅ Derived EMPTY CLAUSE → Contradiction found. The conclusion is TRUE.
+True
